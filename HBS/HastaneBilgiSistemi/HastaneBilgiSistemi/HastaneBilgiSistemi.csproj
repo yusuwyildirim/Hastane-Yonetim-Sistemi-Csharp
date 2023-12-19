@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D6C7E3D2-431A-4670-A3FE-C431015AFC12}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HastaneBilgiSistemi</RootNamespace>
+    <AssemblyName>HastaneBilgiSistemi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\yusuw\Desktop\EXE\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>8769EA6D124FFC500DD27B21E99DE8351EBA3AE8</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>HastaneBilgiSistemi_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Zen.Barcode.Core, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b5ae55aa76d2d9de, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zen.Barcode.Rendering.Framework.3.1.10729.1\lib\Zen.Barcode.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing, Version=1.0.4727.18517, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.2.1.1\lib\net20\zxing.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ameliyathane.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ameliyathane.Designer.cs">
+      <DependentUpon>Ameliyathane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Class2.cs" />
+    <Compile Include="Class3.cs" />
+    <Compile Include="deniyoruz.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>deniyoruz.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Doktor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doktor.Designer.cs">
+      <DependentUpon>Doktor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hasta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hasta.Designer.cs">
+      <DependentUpon>Hasta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HBSDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HBSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HBSDataSet22.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HBSDataSet22.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Hemsire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hemsire.Designer.cs">
+      <DependentUpon>Hemsire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Malzeme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Malzeme.Designer.cs">
+      <DependentUpon>Malzeme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Oda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Oda.Designer.cs">
+      <DependentUpon>Oda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OLUYORUM.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OLUYORUM.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Personel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personel.Designer.cs">
+      <DependentUpon>Personel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Poliklinik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Poliklinik.Designer.cs">
+      <DependentUpon>Poliklinik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yogunbakim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yogunbakim.Designer.cs">
+      <DependentUpon>Yogunbakim.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Ameliyathane.resx">
+      <DependentUpon>Ameliyathane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doktor.resx">
+      <DependentUpon>Doktor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hasta.resx">
+      <DependentUpon>Hasta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hemsire.resx">
+      <DependentUpon>Hemsire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Malzeme.resx">
+      <DependentUpon>Malzeme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Oda.resx">
+      <DependentUpon>Oda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personel.resx">
+      <DependentUpon>Personel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Poliklinik.resx">
+      <DependentUpon>Poliklinik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yogunbakim.resx">
+      <DependentUpon>Yogunbakim.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="deniyoruz.xsc">
+      <DependentUpon>deniyoruz.xsd</DependentUpon>
+    </None>
+    <None Include="deniyoruz.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>deniyoruz.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="deniyoruz.xss">
+      <DependentUpon>deniyoruz.xsd</DependentUpon>
+    </None>
+    <None Include="HastaneBilgiSistemi_TemporaryKey.pfx" />
+    <None Include="HBSDataSet.xsc">
+      <DependentUpon>HBSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HBSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HBSDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HBSDataSet.xss">
+      <DependentUpon>HBSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HBSDataSet22.xsc">
+      <DependentUpon>HBSDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="HBSDataSet22.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HBSDataSet22.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HBSDataSet22.xss">
+      <DependentUpon>HBSDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="OLUYORUM.xsc">
+      <DependentUpon>OLUYORUM.xsd</DependentUpon>
+    </None>
+    <None Include="OLUYORUM.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OLUYORUM.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OLUYORUM.xss">
+      <DependentUpon>OLUYORUM.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 ve x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 </ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
